@@ -15,3 +15,5 @@ Modul ini dapat mem-provision:
 
 
     User dapat mengkostumisasi sebagian besar parameter yang diberikan oleh resource [`azurerm_linux_virtual_machine`](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine).
+
+Modul ini mem-provision virtual machine mengikuti [naming convention Botika](https://wiki.botika.online/en/engineering/infrastructure/standard-infrastruktur#naming-convention).
