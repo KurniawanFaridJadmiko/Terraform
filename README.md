@@ -13,4 +13,5 @@ Modul ini dapat mem-provision:
     - Dapat attach data disk satu atau lebih (attach existing maupun buat baru)
 
 
-    User dapat mengkostumisasi sebagian besar option yang diberikan oleh resource [`azurerm_linux_virtual_machine`](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine).
+
+    User dapat mengkostumisasi sebagian besar parameter yang diberikan oleh resource [`azurerm_linux_virtual_machine`](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine).
