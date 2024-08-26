@@ -1,20 +1,13 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# terraform-botikaaz-virtual-machine
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Modul untuk provision virtual machine dan child-child resource-nya di Azure.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Modul ini dapat mem-provision:
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- Virtual Machine
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+    - Dapat memilih image
+    - Hanya mengizinkan SSH key
+    - Dengan dukungan attach satu atau lebih NIC (attach existing maupun buat baru)
+    - Setiap NIC dapat di-attach satu atau lebih ip (public maupun private) (attach existing maupun buat baru)
+    - Dapat attach data disk satu atau lebih (attach existing maupun buat baru)
