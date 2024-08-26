@@ -23,6 +23,8 @@ Modul ini mem-provision virtual machine mengikuti [naming convention Botika](htt
 
 Gunakan modul [app.terraform.io/BotikaDevOps/azure-regions/botikaaz](https://app.terraform.io/app/BotikaDevOps/registry/modules/private/BotikaDevOps/azure-regions/botikaaz) sebagai penamaan region. 
 
-Referensi: 
+User meng-inputkan di input variable `location` nama location sesuai yang ada di output `az account list-locations --output table` kolom "Name".
+
+## Referensi
 
 - [https://dev.azure.com/Botika/terraform-modules/_git/terraform-botikagcp-compute-engine](https://dev.azure.com/Botika/terraform-modules/_git/terraform-botikagcp-compute-engine)
