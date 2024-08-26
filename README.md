@@ -21,4 +21,4 @@ Modul ini dapat mem-provision:
 
 Modul ini mem-provision virtual machine mengikuti [naming convention Botika](https://wiki.botika.online/en/engineering/infrastructure/standard-infrastruktur#naming-convention).
 
-Gunakan modul [app.terraform.io/BotikaDevOps/azure-regions/botikaaz](app.terraform.io/BotikaDevOps/gcp-regions/botikagcp) sebagai penamaan region.
+Gunakan modul [app.terraform.io/BotikaDevOps/azure-regions/botikaaz](https://app.terraform.io/BotikaDevOps/gcp-regions/botikagcp) sebagai penamaan region.
