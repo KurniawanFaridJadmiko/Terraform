@@ -12,7 +12,7 @@ resource "azurerm_linux_virtual_machine" "contoh" {
     username   = var.admin_username
     public_key = var.ssh_key_data
   }
-  
+
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = var.os_disk_type
