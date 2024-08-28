@@ -14,6 +14,7 @@ resource "azurerm_linux_virtual_machine" "contoh" {
   }
 
   os_disk {
+    name                 = "${var.stack}-disk-${var.environment}-${var.region}"
     caching              = "ReadWrite"
     storage_account_type = var.os_disk_type
     disk_size_gb         = var.os_disk_size_gb
@@ -34,13 +35,14 @@ resource "azurerm_linux_virtual_machine" "contoh" {
 # Create Managed Disks
 resource "azurerm_managed_disk" "data_disks" {
   count               = length(var.data_disks)
-  name                = "${var.stack}-vm-${var.environment}-${var.region}-disk-${count.index}"
+  name                = "${var.stack}-data-disk-${var.environment}-${var.region}-${count.index}"
   location            = var.location
   resource_group_name = var.resource_group_name
   storage_account_type = var.data_disks[count.index].storage_account_type
   create_option       = "Empty"  # Use "Empty" to create new disks
   disk_size_gb        = var.data_disks[count.index].disk_size_gb
 }
+
 
 # Attach Data Disks
 resource "azurerm_virtual_machine_data_disk_attachment" "data_disks" {
